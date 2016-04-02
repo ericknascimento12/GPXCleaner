@@ -15,8 +15,9 @@ public class Ponto {
     private double longitude;
     private double elevacao;
     private String tempo; // datas em Java joda.time
-    
-      
+    private double erroRemocao;
+
+     
     // DATA OBJECT = GUARDAR INFORMAÇÕES E SÃO PEQUENOS COM POUCOS ATRIBUTOS
     //CONSTRUTOR INICIALIZADOR
     
@@ -25,6 +26,7 @@ public class Ponto {
         this.longitude = longitude;
         this.elevacao = elevacao;
         this.tempo = tempo;    
+        this.erroRemocao = 0.0;
     }
     
     
@@ -63,5 +65,14 @@ public class Ponto {
     public void setTempo(String tempo) {
         this.tempo = tempo;
     }
+    
+    public double getErroRemocao() {
+        return erroRemocao;
+    }
+
+    public void setErroRemocao(double erroRemocao) {
+        this.erroRemocao = erroRemocao;
+    }
+       
     
 }
